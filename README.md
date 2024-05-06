@@ -112,6 +112,9 @@ This folder is located in the user folder, which can be accessed by clicking `Op
   You must launch the game at least twice to the title screen or beyond before performance improvements are unlocked on the third launch!
   These improvements are permanent and do not require any extra launches going forward.
 
+
+
+5555555
 - **GPU**
 
   The GPU emulator emulates the Switch's Maxwell GPU using either the OpenGL (version 4.5 minimum), Vulkan, or Metal (via MoltenVK) APIs through a custom build of OpenTK or Silk.NET respectively.
