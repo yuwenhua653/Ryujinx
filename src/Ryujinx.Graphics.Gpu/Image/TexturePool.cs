@@ -484,7 +484,7 @@ namespace Ryujinx.Graphics.Gpu.Image
                         depthOrLayers = Math.Max(1, depthOrLayers >> minLod);
                     }
 
-                    (gobBlocksInY, gobBlocksInZ) = SizeCalculator.GetMipGobBlockSizes(height, depth, formatInfo.BlockHeight, gobBlocksInY, gobBlocksInZ, minLod);
+                    (gobBlocksInY, gobBlocksInZ) = SizeCalculator.GetMipGobBlockSizes(height, depth, formatInfo.BlockHeight, gobBlocksInY, gobBlocksInZ);
                 }
 
                 levels = (maxLod - minLod) + 1;
