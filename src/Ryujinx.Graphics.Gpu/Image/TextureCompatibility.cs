@@ -562,8 +562,7 @@ namespace Ryujinx.Graphics.Gpu.Image
                     depth,
                     lhs.FormatInfo.BlockHeight,
                     lhs.GobBlocksInY,
-                    lhs.GobBlocksInZ,
-                    level);
+                    lhs.GobBlocksInZ);
 
                 return gobBlocksInY == rhs.GobBlocksInY &&
                        gobBlocksInZ == rhs.GobBlocksInZ;
@@ -609,8 +608,7 @@ namespace Ryujinx.Graphics.Gpu.Image
                     lhsDepth,
                     lhs.FormatInfo.BlockHeight,
                     lhs.GobBlocksInY,
-                    lhs.GobBlocksInZ,
-                    lhsLevel);
+                    lhs.GobBlocksInZ);
 
                 int rhsHeight = Math.Max(1, rhs.Height >> rhsLevel);
                 int rhsDepth = Math.Max(1, rhs.GetDepth() >> rhsLevel);
