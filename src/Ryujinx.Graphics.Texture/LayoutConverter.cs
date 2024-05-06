@@ -146,7 +146,7 @@ namespace Ryujinx.Graphics.Texture
                     mipGobBlocksInY >>= 1;
                 }
 
-                if (level > 0 && d <= (mipGobBlocksInZ >> 1) && mipGobBlocksInZ != 1)
+                while (d <= (mipGobBlocksInZ >> 1) && mipGobBlocksInZ != 1)
                 {
                     mipGobBlocksInZ >>= 1;
                 }
@@ -410,7 +410,7 @@ namespace Ryujinx.Graphics.Texture
                     mipGobBlocksInY >>= 1;
                 }
 
-                if (level > 0 && d <= (mipGobBlocksInZ >> 1) && mipGobBlocksInZ != 1)
+                while (d <= (mipGobBlocksInZ >> 1) && mipGobBlocksInZ != 1)
                 {
                     mipGobBlocksInZ >>= 1;
                 }
